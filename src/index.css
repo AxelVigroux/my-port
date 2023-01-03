@@ -1,13 +1,116 @@
-body {
+body,
+html,
+#root {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: "Rounded Mplus 1c";
+  background-color: var(--yellow);
+  color: #ffffff;
+  height: 100%;
+  width: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --blue: #0d184f;
+  --yellow: #feca3a;
+  --pink: #ff595e;
+}
+
+button {
+  background: #0d184f;
+  border-radius: 10px;
+  transition: 0.5s;
+  box-shadow: 2px 3px 0px var(--yellow), 5px 8px 0px var(--blue);
+  color: #fff;
+  padding: 6px 10px;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 36px;
+  cursor: pointer; 
+}
+
+
+/* button {
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  background: var(--yellow);
+  cursor: pointer;
+}
+
+.button-top {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid var(--blue);
+  border-radius: 10px;
+  background: var(--blue);
+  color: #fff;
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+  padding:  0.75em 1.5em;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 26px;
+  box-shadow: 2px 3px 0px var(--yellow), 5px 8px 0px var(--blue);
+}
+
+button:hover .button-top {
+  transform: translateY(-0.33em);
+}
+
+button:active .button-top {
+  transform: translateY(0);
+} */
+
+canvas {
+  height: 100vh !important;
+}
+
+h1 {
+  font-size: 6em;
+  font-weight: 900;
+  line-height: 190px;
+  text-shadow: 8px 9px 0px var(--blue);
+  margin: 0;
+}
+
+h3 {
+  font-weight: 900;
+  font-size: 40px;
+  text-shadow: 5px 4px 0px var(--blue);
+  margin: 0;
+}
+
+p {
+  font-weight: 400;
+  line-height: 35px;
+  padding: 8px 16px;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+li {
+  margin-right: 25px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-height: 80px;
+}
+
+.header-name,
+.header-buttons {
+  margin: 25px 25px;
+}
+
+.header-buttons button {
+  margin-left: 10px;
 }
