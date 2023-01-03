@@ -1,13 +1,12 @@
 import "./Work.css";
+import { Link } from "react-router-dom";
 
 export default function Work() {
   const Project = ({ id, title, technos, link, picture }) => {
     return (
       <div className="project-container">
         <div className="picture">
-          <a href={link} target="_blank">
-            <img src={picture} alt="work picture" />
-          </a>
+          <img src={picture} alt="work picture" />
         </div>
         <div className="bottom">
           <div className="id">
@@ -20,7 +19,7 @@ export default function Work() {
               </p>
             </div>
             <div className="cta">
-              <p>Découvre moi</p>
+              <a href={link} target="_blank">Clique pour découvrir</a>
             </div>
           </div>
         </div>
@@ -96,6 +95,7 @@ export default function Work() {
               id={element.id}
               title={element.title}
               technos={element.technos}
+              link={element.link}
             />
           ) : null
         )}
@@ -112,6 +112,7 @@ export default function Work() {
               id={element.id}
               title={element.title}
               technos={element.technos}
+              link={element.link}
             />
           ) : null
         )}
