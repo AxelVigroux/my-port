@@ -1,10 +1,5 @@
-import "./Landing.css";
-import Scene from "../../components/Scene.js";
+import './Landing.css';
 
 export default function Landing() {
-  return (
-    <div className="landing">
-      <Scene />
-    </div>
-  );
+  return <div className="landing"></div>;
 }
