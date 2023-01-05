@@ -1,12 +1,11 @@
 import "./Work.css";
-import { Link } from "react-router-dom";
 
 export default function Work() {
   const Project = ({ id, title, technos, link, picture }) => {
     return (
       <div className="project-container">
         <div className="picture">
-          <img src={picture} alt="work picture" />
+          <img src="https://picsum.photos/650/650" alt="work picture" />
         </div>
         <div className="bottom">
           <div className="id">

@@ -21,7 +21,10 @@ export default function Contact() {
           </a>
         </div>
         <div className="square">
-          <a href="https://www.linkedin.com/in/axel-vigroux-32598b201/">
+          <a
+            href="https://www.linkedin.com/in/axel-vigroux-32598b201/"
+            target="_blank"
+          >
             <img src={LogoLinkedin} alt="logo linkedin" />
           </a>
         </div>
