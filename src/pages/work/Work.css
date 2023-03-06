@@ -26,8 +26,9 @@
 }
 
 .picture {
-  width: 650px;
-  height: 650px;
+  width: 646px;
+  height: 538px;
+  border-radius: 15%;
   background-color: var(--blue);
 }
 

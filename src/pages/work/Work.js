@@ -1,11 +1,15 @@
 import "./Work.css";
+import title from "../../assets/work.png";
+import discover from "../../assets/discover.png";
+import project from "../../assets/project.png";
 
 export default function Work() {
   const Project = ({ id, title, technos, link, picture }) => {
+    console.log(picture);
     return (
       <div className="project-container">
         <div className="picture">
-          <img src="https://picsum.photos/650/650" alt="work picture" />
+          <img src={picture} alt="work picture" />
         </div>
         <div className="bottom">
           <div className="id">
@@ -18,7 +22,9 @@ export default function Work() {
               </p>
             </div>
             <div className="cta">
-              <a href={link} target="_blank">Clique pour découvrir</a>
+              <a href={link} target="_blank">
+                <img src={discover} />
+              </a>
             </div>
           </div>
         </div>
@@ -29,7 +35,7 @@ export default function Work() {
   const projects = [
     {
       id: 1,
-      picture: "",
+      picture: project,
       title: "Gamble bike",
       technos: "React.js / Node",
       position: "left",
@@ -37,7 +43,7 @@ export default function Work() {
     },
     {
       id: 2,
-      picture: "",
+      picture: project,
       title: "Filo Blind Test",
       technos: "React / Node",
       position: "right",
@@ -45,7 +51,7 @@ export default function Work() {
     },
     {
       id: 3,
-      picture: "",
+      picture: project,
       title: "E-pottery",
       technos: "React / Node",
       position: "left",
@@ -53,7 +59,7 @@ export default function Work() {
     },
     {
       id: 4,
-      picture: "",
+      picture: project,
       title: "SpotX",
       technos: "React / Node",
       position: "right",
@@ -61,7 +67,7 @@ export default function Work() {
     },
     {
       id: 5,
-      picture: "",
+      picture: project,
       title: "Mealories",
       technos: "Rails",
       position: "left",
@@ -69,7 +75,7 @@ export default function Work() {
     },
     {
       id: 6,
-      picture: "",
+      picture: project,
       title: "KittyPics",
       technos: "Rails",
       position: "right",
@@ -77,7 +83,7 @@ export default function Work() {
     },
     {
       id: 7,
-      picture: "",
+      picture: project,
       title: "SunnySide Agency",
       technos: "Html / Css / Js",
       position: "left",
@@ -92,6 +98,7 @@ export default function Work() {
           element.position === "left" ? (
             <Project
               id={element.id}
+              picture={element.picture}
               title={element.title}
               technos={element.technos}
               link={element.link}
@@ -101,14 +108,14 @@ export default function Work() {
       </div>
       <div className="right">
         <div className="my-work">
-          <h1>Mes travaux</h1>
-          <h3>still in progress...</h3>
+          <img className="title" src={title} />
         </div>
 
         {projects.map((element) =>
           element.position === "right" ? (
             <Project
               id={element.id}
+              picture={element.picture}
               title={element.title}
               technos={element.technos}
               link={element.link}

@@ -1,4 +1,5 @@
 import "./About.css"
+import title from "../../assets/about.png"
 
 export default function About() {
   return (
@@ -6,14 +7,12 @@ export default function About() {
       <div className="about-left"></div>
       <div className="about-right">
         <div className="about-title">
-          <h1>About me</h1>
+          <img src={title} />
         </div>
-        <div className="blue">
-          <h3>Axel Vigroux</h3>
-        </div>
+    
 
         <div className="about-text">
-          <h2>Presentation</h2>
+          <h2 className="presentation">Presentation</h2>
           <p>
             Hej ! Bienvenue sur mon portfolio, je m'appelle Axel et je vis à
             Toulouse. Après avoir travaillé pendant quelques années en tant que
